@@ -5,3 +5,13 @@ button:focus-visible {
     outline-offset: 3px;
     border-radius: 4px;
 }
+
+/* 상단 메뉴(#menu)는 overflow:auto이고 링크가 헤더 높이(60px)를 채워서 바깥쪽 테두리가 잘린다.
+   좌우 여백을 주고 테두리를 링크 안쪽에 그린다. */
+#menu a {
+    padding: 0 10px;
+}
+
+#menu a:focus-visible {
+    outline-offset: -8px;
+}
