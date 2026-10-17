@@ -61,9 +61,11 @@ python .github/pages_build.py --build
 | 사이트 제목·언어, 홈 이름·소개·아바타, 메뉴, GitHub 링크 | `site/hugo.toml` |
 | 소개 페이지 | `site/content/about.md` |
 | 활동 목록 제목 / 대표 활동 페이지 | `site/content/projects/_index.md` / `site/content/projects/apple.md` |
+| 두 번째 활동(캡스톤) 페이지 | `site/content/projects/capstone.md` |
 | 홈 아바타 이미지 | `site/assets/images/avatar.png` (테마가 150x150으로 줄여 출력) |
 | 파비콘 | `site/static/` 의 `favicon*`, `apple-touch-icon.png`, `safari-pinned-tab.svg` |
 | 키보드 초점 표시 등 추가 스타일 | `site/assets/css/extended/focus.css` (테마가 `css/extended/*.css`를 자동으로 합침) |
+| 본문 표 안의 긴 경로·URL 줄바꿈 스타일 | `site/assets/css/extended/content.css` |
 | 테마 템플릿 수정본 | `site/layouts/` (아래 표) |
 
 테마 원본을 직접 고치지 않고, 바꿔야 하는 템플릿만 `site/layouts/`의 같은 경로로 복사해 수정했습니다.
