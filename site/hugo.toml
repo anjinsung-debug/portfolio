@@ -1,4 +1,10 @@
 # 사이트 기본 설정. baseURL·theme은 배포 스크립트가 pages.json으로 넣으므로 여기서 지정하지 않는다.
-title = "포트폴리오"
+title = "안진성"
 locale = "ko-KR"
 defaultContentLanguage = "ko"
+
+# 홈 화면: 이름·소개를 보여 주는 PaperMod Profile 모드
+[params.profileMode]
+  enabled = true
+  title = "안진성"
+  subtitle = "전북대학교 컴퓨터공학부 안진성입니다"
