@@ -39,3 +39,15 @@ summary: "구매자 앱·판매자 앱·API 서버로 나눠 만든 사과 주�
 - **결제 대행 없이 계좌 이체 + 입금 확인**: 판매자 계좌로 직접 입금받고, 판매자가 입금을 확인해야만 주문을 접수할 수 있게 했습니다.
 - **구매자 앱과 판매자 앱 분리**: 사용하는 사람과 화면이 완전히 다르므로 앱을 나누고,
   역할 검사는 화면(라우트)과 API 양쪽에서 해서 판매자 화면을 구매자가 쓰지 못하게 했습니다.
+
+## 산출물과 결과
+
+| 산출물 | 무엇을 구현·확인했는가 |
+|---|---|
+| [README](https://github.com/anjinsung-debug/apple#readme) | 실행 방법, 전체 주문 흐름, 폴더 구조, ERD, API 목록 정리 |
+| [구매자 앱](https://github.com/anjinsung-debug/apple/tree/main/web-buyer) | 품목 선택 → 주소 입력 → 입금자명 입력 → 주문 전송, 주문 내역과 배송 진행 타임라인 |
+| [판매자 앱](https://github.com/anjinsung-debug/apple/tree/main/web-seller) | 상태별 주문 탭, 입금 확인 → 주문 접수 → 배송 처리, 판매 품목·입금 계좌 관리 |
+| [API 서버](https://github.com/anjinsung-debug/apple/tree/main/server) | 로그인·배송지·상품·주문·알림 API와 주문 상태 전이 규칙 |
+| [테스트 코드](https://github.com/anjinsung-debug/apple/tree/main/server/tests) | 주문번호 형식, 상태 전이 허용·거부 규칙(단위), 로그인 API(통합) |
+
+로컬에서 서버와 두 앱을 실행하면 개발용 로그인으로 구매자 주문부터 판매자 배송 완료까지 전체 흐름을 확인할 수 있습니다.
