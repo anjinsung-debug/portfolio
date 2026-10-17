@@ -56,3 +56,16 @@ weight: 2
   `n0`, `l0`처럼 목록 순서로 이름을 지었습니다.
 - **계산할 수 없는 계통은 이유와 함께 거절**: 미완성 계통·루프·수렴 실패는 오류로 바꿔,
   화면에 빠진 항목을 알려 줄 수 있게 했습니다(API는 422 응답).
+
+## 산출물과 결과
+
+| 산출물 (본인 담당) | 무엇을 구현·확인했는가 |
+|---|---|
+| [simulation/dss.py](https://github.com/anjinsung-debug/capstone/blob/main/simulation/dss.py) | 계통 → OpenDSS 명령어 변환, 계통 완성 검사, 실제 조류 방향 계산 |
+| [simulation/simulate.py](https://github.com/anjinsung-debug/capstone/blob/main/simulation/simulate.py) | 조류 계산·3상 단락 고장 해석으로 전압·부하율·역조류·고장전류·피더별 송출 전력 계산 |
+| [simulation/plot.py](https://github.com/anjinsung-debug/capstone/blob/main/simulation/plot.py) | 거리별 전압 그래프(정상 범위 밖은 빨간 점), 선로별 전력 그래프(역조류 주황, 과부하 빨강) |
+| [backend/api/simulation.py](https://github.com/anjinsung-debug/capstone/blob/main/backend/api/simulation.py) | 화면에서 시뮬레이션·결과 그래프를 요청하는 API |
+
+한전이 제공한 실제 계통 데이터로 `python -m simulation.simulate` 자체 점검을 실행해
+역조류 방향, 루프 검출, 정전 구간, 오류 처리가 동작하는 것을 확인했습니다.
+팀 전체로는 단선도 편집 → 자동 저장 → 자동 재계산 → 결과 표시 → AI 리포트까지의 흐름이 동작합니다.
