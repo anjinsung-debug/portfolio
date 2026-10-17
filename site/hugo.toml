@@ -8,3 +8,8 @@ defaultContentLanguage = "ko"
   enabled = true
   title = "안진성"
   subtitle = "전북대학교 컴퓨터공학부 안진성입니다"
+  # assets/images/에 두면 테마가 150x150으로 줄여서 내보낸다. imageTitle은 img의 alt가 된다.
+  imageUrl = "images/avatar.png"
+  imageTitle = "안진성 아바타"
+  imageWidth = 150
+  imageHeight = 150
