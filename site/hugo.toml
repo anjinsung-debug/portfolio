@@ -23,6 +23,12 @@ defaultContentLanguage = "ko"
     name = "활동"
     url = "projects/"
 
+# 홈 소셜 아이콘. name은 테마 아이콘 이름(소문자), title은 링크의 이름표가 된다.
+[[params.socialIcons]]
+  name = "github"
+  title = "GitHub"
+  url = "https://github.com/anjinsung-debug"
+
 # 상단 메뉴(상대 경로)
 [[menu.main]]
   name = "소개"
