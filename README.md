@@ -91,3 +91,27 @@ python .github/pages_build.py --build
 
 실행이 실패하면 실패한 단계의 로그를 열어 원인을 확인하고, 로컬에서 `python .github/pages_build.py --build`로
 같은 오류가 나는지 먼저 재현합니다.
+
+## 출처와 라이선스
+
+### 외부 자료
+
+| 자료 | 사용 위치 | 출처 | 이용 조건 |
+|---|---|---|---|
+| PaperMod 테마 | `site/themes/template/` (최상위는 ZIP 원본) | <https://github.com/adityatelange/hugo-PaperMod> (Download ZIP, 2026-10-17) | MIT License. 고지는 `LICENSE`, `site/themes/template/LICENSE`에 유지. 원본 설명서는 `THEME-README.md` |
+| Hugo | 빌드 도구 (저장소에 포함하지 않음) | <https://github.com/gohugoio/hugo> | Apache License 2.0 |
+| GitHub Pages 배포 준비 스크립트 | `prepare_github_pages.py`, `.github/pages_build.py`, `.github/workflows/hugo-pages.yml`, `site/pages.json`, `.github-pages.json` | 초급프로젝트 수업 제공 (버전 3.1) | 수업 배포 자료 |
+
+사이트 하단의 "Powered by Hugo & PaperMod" 고지는 테마 출처 표시로 그대로 둡니다.
+
+### 직접 제작 · AI 생성 구분
+
+| 자료 | 위치 | 구분 |
+|---|---|---|
+| 소개·활동 글의 내용(관심 분야와 이유, 수행 시기, 역할, 배운 점 등) | `site/content/` | 본인 |
+| 소개·활동 글의 문장 구성과 사과랑 코드 근거 정리 | `site/content/` | AI(Claude) 초안을 본인이 확인·수정 |
+| 아바타 이미지 | `site/assets/images/avatar.png` | 본인 제공 미모티콘 이미지 |
+| 파비콘 5종 | `site/static/` | AI 생성 (Claude가 작성한 Python 표준 라이브러리 스크립트로 만든 단순 도형) |
+| 사이트 설정 `site/hugo.toml`, 이 README | 저장소 | AI(Claude) 도움으로 작성, 본인이 실행·배포 결과로 확인 |
+
+AI 사용 도구: Claude Code 데스크톱 앱(Claude Opus 5.5). 각 커밋 메시지의 `Co-Authored-By` 줄로 AI가 함께 작업한 커밋을 구분할 수 있습니다.
