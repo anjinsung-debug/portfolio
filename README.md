@@ -63,6 +63,20 @@ python .github/pages_build.py --build
 | 활동 목록 제목 / 대표 활동 페이지 | `site/content/projects/_index.md` / `site/content/projects/apple.md` |
 | 홈 아바타 이미지 | `site/assets/images/avatar.png` (테마가 150x150으로 줄여 출력) |
 | 파비콘 | `site/static/` 의 `favicon*`, `apple-touch-icon.png`, `safari-pinned-tab.svg` |
+| 키보드 초점 표시 등 추가 스타일 | `site/assets/css/extended/focus.css` (테마가 `css/extended/*.css`를 자동으로 합침) |
+| 테마 템플릿 수정본 | `site/layouts/` (아래 표) |
+
+테마 원본을 직접 고치지 않고, 바꿔야 하는 템플릿만 `site/layouts/`의 같은 경로로 복사해 수정했습니다.
+Hugo는 같은 경로라면 `site/layouts/`의 파일을 테마보다 먼저 사용합니다.
+
+| 수정본 | 원본 대비 바꾼 내용 |
+|---|---|
+| `site/layouts/_partials/header.html` | 테마 전환 버튼 이름 `Toggle theme` → `라이트/다크 테마 전환` |
+| `site/layouts/_partials/footer.html` | 맨 위로 버튼 이름 `go to top` → `페이지 맨 위로` |
+| `site/layouts/list.html` | 목록 링크 이름 `post link to …` → `… 페이지로 이동` |
+| `site/layouts/404.html` | 숫자 404만 있던 화면 → 한국어 제목·안내·홈/소개/활동 링크 |
+| `site/layouts/_partials/head.html` | 404 페이지의 문서 제목을 `페이지를 찾을 수 없음`으로 |
+| `site/layouts/baseof.html`, `site/layouts/rss.xml`, `site/layouts/_partials/templates/opengraph.html` | Hugo 0.158 사용 중단 API(`LanguageDirection`, `LanguageCode`)를 `Direction`, `Locale`로 교체 |
 
 건드리지 않는 파일:
 
