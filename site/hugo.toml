@@ -13,3 +13,23 @@ defaultContentLanguage = "ko"
   imageTitle = "안진성 아바타"
   imageWidth = 150
   imageHeight = 150
+
+  # 홈 버튼. url 앞에 /를 붙이면 /portfolio/ 하위 경로가 빠지므로 상대 경로로 쓴다.
+  [[params.profileMode.buttons]]
+    name = "소개"
+    url = "about/"
+
+  [[params.profileMode.buttons]]
+    name = "활동"
+    url = "projects/"
+
+# 상단 메뉴(상대 경로)
+[[menu.main]]
+  name = "소개"
+  url = "about/"
+  weight = 1
+
+[[menu.main]]
+  name = "활동"
+  url = "projects/"
+  weight = 2
