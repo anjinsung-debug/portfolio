@@ -35,7 +35,7 @@ description: "안진성의 관심 분야, 학습 목표와 다음 행동, 사용
 
 ### Python (OpenDSS · matplotlib · FastAPI)
 
-캡스톤 팀 프로젝트 [배전계통 통합 분석 플랫폼](https://github.com/anjinsung-debug/capstone)(4명, 2026년 9~10월)에서
+캡스톤 팀 프로젝트 [배전계통 통합 분석 플랫폼]({{< ref "projects/capstone" >}})(4명, 2026년 9~10월)에서
 22.9kV 배전계통을 웹에서 편집하면 시뮬레이션을 다시 돌려 결과를 보여 주는 기능 중, 시뮬레이션 부분을 맡아 Python으로 구현했습니다.
 
 - `simulation/dss.py`: 데이터베이스(Neo4j)에서 읽은 계통(전원·부하·분산전원·선로·개폐기)을 OpenDSS 명령어로 변환합니다.
