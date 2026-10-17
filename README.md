@@ -60,8 +60,9 @@ python .github/pages_build.py --build
 |---|---|
 | 사이트 제목·언어, 홈 이름·소개·아바타, 메뉴, GitHub 링크 | `site/hugo.toml` |
 | 소개 페이지 | `site/content/about.md` |
-| 활동 목록 제목 / 대표 활동 페이지 | `site/content/projects/_index.md` / `site/content/projects/apple.md` |
-| 두 번째 활동(캡스톤) 페이지 | `site/content/projects/capstone.md` |
+| 활동 목록 제목 / 대표 활동 페이지 | `site/content/projects/_index.md` / `site/content/projects/apple/index.md` |
+| 두 번째 활동(캡스톤) 페이지 | `site/content/projects/capstone/index.md` |
+| 활동 페이지의 실행 화면 이미지 | 각 활동 폴더(`apple/`, `capstone/`)의 `*.png`. 본문에서 `{{< figure src="파일명.png" alt="…" caption="…" >}}`로 넣음 |
 | 홈 아바타 이미지 | `site/assets/images/avatar.png` (테마가 150x150으로 줄여 출력) |
 | 파비콘 | `site/static/` 의 `favicon*`, `apple-touch-icon.png`, `safari-pinned-tab.svg` |
 | 키보드 초점 표시 등 추가 스타일 | `site/assets/css/extended/focus.css` (테마가 `css/extended/*.css`를 자동으로 합침) |
@@ -127,6 +128,7 @@ Hugo는 같은 경로라면 `site/layouts/`의 파일을 테마보다 먼저 사
 | 소개·활동 글의 내용(관심 분야와 이유, 수행 시기, 역할, 배운 점 등) | `site/content/` | 본인 |
 | 소개·활동 글의 문장 구성과 사과랑 코드 근거 정리 | `site/content/` | AI(Claude) 초안을 본인이 확인·수정 |
 | 아바타 이미지 | `site/assets/images/avatar.png` | 본인 제공 미모티콘 이미지 |
+| 사과랑·캡스톤 실행 화면 캡처 5장 | `site/content/projects/apple/`, `site/content/projects/capstone/` | 본인 캡처 (폭 1280px로 축소, 사과랑 화면의 문의 전화번호는 가림. 캡스톤 화면은 팀 공동 프론트엔드) |
 | 파비콘 5종 | `site/static/` | AI 생성 (Claude가 작성한 Python 표준 라이브러리 스크립트로 만든 단순 도형) |
 | 사이트 설정 `site/hugo.toml`, 이 README | 저장소 | AI(Claude) 도움으로 작성, 본인이 실행·배포 결과로 확인 |
 
