@@ -2,6 +2,8 @@
 title = "안진성"
 locale = "ko-KR"
 defaultContentLanguage = "ko"
+# 분류(카테고리·태그)를 쓰지 않으므로 빈 영어 페이지 /categories/, /tags/를 만들지 않는다.
+disableKinds = ["taxonomy", "term"]
 
 # 홈 화면: 이름·소개를 보여 주는 PaperMod Profile 모드
 [params.profileMode]
