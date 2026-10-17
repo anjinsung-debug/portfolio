@@ -129,7 +129,8 @@ Hugo는 같은 경로라면 `site/layouts/`의 파일을 테마보다 먼저 사
 | 소개·활동 글의 문장 구성과 사과랑 코드 근거 정리 | `site/content/` | AI(Claude) 초안을 본인이 확인·수정 |
 | 아바타 이미지 | `site/assets/images/avatar.png` | 본인 제공 미모티콘 이미지 |
 | 사과랑·캡스톤 실행 화면 캡처 5장 | `site/content/projects/apple/`, `site/content/projects/capstone/` | 본인 캡처 (폭 1280px로 축소, 사과랑 화면의 문의 전화번호는 가림. 캡스톤 화면은 팀 공동 프론트엔드) |
-| 파비콘 5종 | `site/static/` | AI 생성 (Claude가 작성한 Python 표준 라이브러리 스크립트로 만든 단순 도형) |
+| 파비콘 4종 (`favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png`) | `site/static/` | 본인 아바타(미모티콘)의 얼굴 부분을 잘라 줄인 이미지. 변환 스크립트는 AI(Claude) 작성 |
+| `safari-pinned-tab.svg` | `site/static/` | AI 생성 단색 원 도형 (Safari 고정 탭 아이콘은 단색 벡터만 가능해 아바타를 쓰지 않음) |
 | 사이트 설정 `site/hugo.toml`, 이 README | 저장소 | AI(Claude) 도움으로 작성, 본인이 실행·배포 결과로 확인 |
 
 AI 사용 도구: Claude Code 데스크톱 앱(Claude Opus 5.5). 각 커밋 메시지의 `Co-Authored-By` 줄로 AI가 함께 작업한 커밋을 구분할 수 있습니다.
