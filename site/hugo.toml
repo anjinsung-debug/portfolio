@@ -32,7 +32,7 @@ disableKinds = ["taxonomy", "term"]
 # 홈 소셜 아이콘. name은 테마 아이콘 이름(소문자), title은 링크의 이름표가 된다.
 [[params.socialIcons]]
   name = "github"
-  title = "GitHub"
+  title = "GitHub (새 창에서 열림)"
   url = "https://github.com/anjinsung-debug"
 
 # 상단 메뉴(상대 경로)
