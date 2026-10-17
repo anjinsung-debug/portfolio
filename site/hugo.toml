@@ -5,6 +5,10 @@ defaultContentLanguage = "ko"
 # 분류(카테고리·태그)를 쓰지 않으므로 빈 영어 페이지 /categories/, /tags/를 만들지 않는다.
 disableKinds = ["taxonomy", "term"]
 
+# 홈과 검색·링크 미리보기에 쓰이는 사이트 설명(meta description)
+[params]
+  description = "전북대학교 컴퓨터공학부 안진성의 포트폴리오. 웹 서비스 개발 관심 분야와 대표 활동 '사과랑'을 소개합니다."
+
 # 홈 화면: 이름·소개를 보여 주는 PaperMod Profile 모드
 [params.profileMode]
   enabled = true
