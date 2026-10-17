@@ -1,0 +1,5 @@
+/* 표 칸 안의 긴 파일 경로·URL도 줄바꿈되게 한다. 390px 화면에서 'backend/api/simulation.py' 같은 경로가
+   한 칸을 238px로 넓혀 설명 칸이 110px로 좁아지고 표에 가로 스크롤이 생겼다. */
+.post-content td {
+    overflow-wrap: anywhere;
+}
