@@ -1,0 +1,4 @@
+# 사이트 기본 설정. baseURL·theme은 배포 스크립트가 pages.json으로 넣으므로 여기서 지정하지 않는다.
+title = "포트폴리오"
+languageCode = "ko-KR"
+defaultContentLanguage = "ko"
